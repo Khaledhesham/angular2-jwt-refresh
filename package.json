@@ -1,38 +1,38 @@
 {
-  "name": "angular2-jwt-refresh",
-  "version": "0.1.0",
-  "description": "Refresh token support for angular2-jwt",
-  "main": "dist/angular2-jwt-refresh.js",
-  "typings": "./dist/angular2-jwt-refresh.d.ts",
-  "types": "./dist/angular2-jwt-refresh.d.ts",
-  "scripts": {
-    "prebuild": "npm run lint && npm test",
-    "build": "tsc -d --outDir dist --noUnusedLocals --noUnusedParameters --pretty --noEmitOnError",
-    "karma": "karma start",
-    "test": "npm run karma -- --single-run",
-    "lint": "tslint --config tslint.json src/**/*.ts",
-    "watch": "npm run karma",
-    "prepublish": "npm run build",
-    "preversion": "npm run build"
+  "_from": "angular2-jwt-refresh",
+  "_id": "angular2-jwt-refresh@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-UDxdkkK8HP5/RLVAIpfjodcoO9A=",
+  "_location": "/angular2-jwt-refresh",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular2-jwt-refresh",
+    "name": "angular2-jwt-refresh",
+    "escapedName": "angular2-jwt-refresh",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "keywords": [
-    "angular",
-    "angular2",
-    "jwt",
-    "refresh",
-    "token"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "author": "Leonardo Bazico",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leonardobazico/angular2-jwt-refresh.git"
+  "_resolved": "https://registry.npmjs.org/angular2-jwt-refresh/-/angular2-jwt-refresh-0.1.0.tgz",
+  "_shasum": "503c5d9242bc1cfe7f44b5402297e3a1d7283bd0",
+  "_spec": "angular2-jwt-refresh",
+  "_where": "/home/khalod/dawayer/telefongy_ui",
+  "author": {
+    "name": "Leonardo Bazico"
   },
   "bugs": {
     "url": "https://github.com/leonardobazico/angular2-jwt-refresh/issues"
   },
-  "homepage": "https://github.com/leonardobazico/angular2-jwt-refresh#readme",
+  "bundleDependencies": false,
   "dependencies": {},
+  "deprecated": false,
+  "description": "Refresh token support for angular2-jwt",
   "devDependencies": {
     "@angular/common": "2.4.6",
     "@angular/compiler": "2.4.6",
@@ -65,10 +65,38 @@
     "webpack": "2.2.1",
     "zone.js": "0.7.6"
   },
+  "homepage": "https://github.com/leonardobazico/angular2-jwt-refresh#readme",
+  "keywords": [
+    "angular",
+    "angular2",
+    "jwt",
+    "refresh",
+    "token"
+  ],
+  "license": "MIT",
+  "main": "dist/angular2-jwt-refresh.js",
+  "name": "angular2-jwt-refresh",
   "peerDependencies": {
     "@angular/core": ">= 2.0.0",
     "@angular/http": ">= 2.0.0",
     "angular2-jwt": ">= 0.1.28",
     "rxjs": ">= 5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardobazico/angular2-jwt-refresh.git"
+  },
+  "scripts": {
+    "build": "tsc -d --outDir dist --noUnusedLocals --noUnusedParameters --pretty --noEmitOnError",
+    "karma": "karma start",
+    "lint": "tslint --config tslint.json src/**/*.ts",
+    "prebuild": "npm run lint && npm test",
+    "prepublish": "npm run build",
+    "preversion": "npm run build",
+    "test": "npm run karma -- --single-run",
+    "watch": "npm run karma"
+  },
+  "types": "./dist/angular2-jwt-refresh.d.ts",
+  "typings": "./dist/angular2-jwt-refresh.d.ts",
+  "version": "0.1.0"
 }
