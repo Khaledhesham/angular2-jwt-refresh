@@ -152,7 +152,7 @@ export class JwtHttp extends AuthHttp {
             return Observable.of(res);
           })
           .catch((res: any) => {
-            var tokenSetter = _this.refreshConfig.tokenRemover(res);
+            var tokenSetter = _this.refreshConfig.tokenRemover();
             this.setRefreshing(false);
             this.emitRefreshToken();
 
