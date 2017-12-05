@@ -105,7 +105,8 @@ export class JwtHttp extends AuthHttp {
         let requestWithToken;
         let options = new RequestOptions({
           body: payload,
-          method: RequestMethod.Post,
+          method: RequestMethod.Post,               
+          withCredentials: true,
           url: this.refreshConfig.endPoint
         });
 
@@ -151,6 +152,7 @@ export class JwtHttp extends AuthHttp {
             return Observable.of(res);
           })
           .catch((res: any) => {
+            var tokenSetter = _this.refreshConfig.tokenRemover(res);
             this.setRefreshing(false);
             this.emitRefreshToken();
 
