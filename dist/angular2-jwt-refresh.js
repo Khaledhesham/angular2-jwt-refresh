@@ -49,10 +49,10 @@ var JwtHttp = (function (_super) {
             return Observable_1.Observable
                 .fromPromise(token)
                 .mergeMap(function (jwtToken) { return _this.refreshTheToken(jwtToken); })
-                .mergeMap(function () { return _super.prototype.request.call(_this, url, options); });
+                .mergeMap(function () { return _super.prototype.request.call(_this, url, options).catch(_this.refreshConfig.errorHandler(this)); });
         }
         return this.refreshTheToken(token)
-            .mergeMap(function () { return _super.prototype.request.call(_this, url, options); });
+            .mergeMap(function () { return _super.prototype.request.call(_this, url, options).catch(_this.refreshConfig.errorHandler(this)); });
     };
     JwtHttp.prototype.refreshTheToken = function (accessToken) {
         var _this = this;
